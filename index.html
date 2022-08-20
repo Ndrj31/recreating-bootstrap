@@ -1,12 +1,98 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recreating Bootstrap</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recreating Bootstrap</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h2>This is reproduction from Bootstrap to HTML for learning</h2>
+
+    <h3>Buttons</h3>
+    <button type="button" class="btn">Basic</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-primary">Primary</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-success">Success</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-info">Info</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-warning">Warning</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-danger">Danger</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-dark">Dark</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-light">Light</button>
+    <!--- for recreating btn of bootstrap-->
+    <button type="button" class="btn btn-link" role="button">Link</button>
+    <!--- for recreating btn of bootstrap-->
+
+    <h3>Images + Jumbotron</h3>
+    <div class="jumbotron jambotron-fluid">
+      <div class="container">
+        This background behind me is called <br />
+        Jambotron <br />
+        <hr />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi
+        in risus semper venenatis eu non nisl. Vivamus consectetur non elit id
+        feugiat. Ut mollis lorem vitae diam venenatis, pulvinar hendrerit orci
+        eleifend. Pellentesque interdum posuere ligula tincidunt finibus. Nulla
+        aliquet accumsan tellus, bibendum fringilla velit euismod at. Mauris
+        arcu libero, tincidunt ac blandit ac, finibus at erat. Donec nec arcu
+        scelerisque mi interdum lacinia. Nullam volutpat varius tortor vitae
+        pharetra. Etiam cursus nunc lacus, vitae varius urna posuere eu. Fusce
+        turpis velit, venenatis non sollicitudin a, blandit sit amet justo. In
+        nec placerat nibh. Donec porttitor lacinia ultricies. Integer pretium
+        porta gravida.
+      </div>
+    </div>
+    <div class="container-fluid">
+      <img src="images/cat.jpg" alt="This is a cat " class="rounded" />
+      <img src="images/cat.jpg" alt="This is a cat " class="rounded-circle" />
+      <img src="images/cat.jpg" alt="This is a cat " class="img-thumbnail" />
+    </div>
+    <h3>Badges</h3>
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
+
+    <h3>Badges inside buttons</h3>
+    <button class="btn btn-primary">
+      Messages <span class="badge badge-light badge-squared">4</span>
+    </button>
+
+    <h3>Basic progress bar</h3>
+    <div class="progress">
+      <div class="progress-bar" style="width: 25%">25%</div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%">50%</div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 100%">100%</div>
+    </div>
+
+    <h3>Pagination</h3>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </body>
 </html>

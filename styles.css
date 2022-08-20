@@ -1,0 +1,235 @@
+/*for recreating btn class of bootstrap*/
+
+.btn {
+  padding: 5px 5px 7px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  border-radius: 3px;
+  border-style: none;
+  background-color: rgb(248, 250, 252);
+  border-color: none;
+}
+
+.btn-primary {
+  background-color: rgb(48, 114, 200);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgb(25, 79, 189);
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(93, 93, 93);
+}
+
+.btn-success {
+  background-color: rgb(58, 147, 58);
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: green;
+}
+
+.btn-info {
+  background-color: rgb(20, 175, 192);
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: rgb(73, 132, 129);
+}
+
+.btn-warning {
+  background-color: rgb(252, 210, 103);
+}
+
+.btn-warning:hover {
+  background-color: rgb(244, 186, 39);
+}
+
+.btn-danger {
+  background-color: rgba(248, 68, 68, 0.849);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: rgb(171, 49, 49);
+}
+
+.btn-dark {
+  background-color: rgba(49, 53, 53, 0.899);
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: black;
+}
+
+.btn-light {
+  background-color: rgb(242, 239, 239);
+}
+
+.btn-light:hover {
+  background-color: rgb(233, 233, 226);
+}
+
+.btn-link {
+  background-color: white;
+  color: rgb(54, 87, 197);
+}
+
+.btn-link:hover {
+  background-color: white;
+  color: blue;
+  text-decoration: underline;
+}
+
+.rounded-circle {
+  margin: 10px;
+  padding: 10px;
+  max-height: 300px;
+  max-width: auto;
+  border-radius: 50%;
+}
+
+/*TODO: Check if it is the same as what bootstrap offers*/
+
+.rounded {
+  margin: 10px;
+  max-height: 300px;
+  max-width: auto;
+  border-radius: 5px;
+}
+
+.img-thumbnail {
+  margin: 10px;
+  max-height: 300px;
+  max-width: auto;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid rgb(112, 110, 110);
+  border-radius: 5px;
+}
+
+.badge {
+  padding: 2px 8px 5px 8px;
+  color: black;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.badge-primary {
+  background-color: rgb(48, 114, 200);
+  color: white;
+}
+
+.badge-secondary {
+  background-color: gray;
+  color: white;
+}
+
+.badge-success {
+  background-color: rgb(58, 147, 58);
+  color: white;
+}
+
+.badge-info {
+  background-color: rgb(20, 175, 192);
+  color: white;
+}
+
+.badge-warning {
+  background-color: rgb(252, 210, 103);
+  color: white;
+}
+
+.badge-danger {
+  background-color: rgba(248, 68, 68, 0.849);
+  color: white;
+}
+
+.badge-dark {
+  background-color: rgba(49, 53, 53, 0.899);
+  color: white;
+}
+
+.badge-light {
+  background-color: rgb(242, 239, 239);
+}
+
+.badge-squared {
+  border-radius: 5px;
+  padding: 1px 4px 2px 4px;
+  font-weight: 800;
+}
+
+.progress {
+  background-color: lightgray;
+  margin: 10px;
+  height: 15px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: rgb(35, 140, 246);
+  height: 15px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.container {
+  padding: 50px 10ch 50px 10ch;
+  max-width: 400px;
+  /*TODO: Check this max width property*/
+}
+
+.container-fluid {
+  padding: 50px 10ch 50px 10ch;
+  width: 100%;
+}
+
+.jumbotron {
+  background-color: lightgray;
+}
+
+.jumbotron-fluid {
+  width: 100ch;
+}
+
+.pagination {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-item {
+  color: rgb(35, 140, 246);
+  list-style: none;
+}
+
+.page-link {
+  text-decoration-line: none;
+  color: rgb(35, 140, 246);
+  padding: 6px 10px;
+  border: 1px solid lightgray;
+}
+
+.page-link:hover {
+  background-color: rgb(227, 227, 227);
+}
