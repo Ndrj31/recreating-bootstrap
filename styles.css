@@ -213,7 +213,8 @@
 }
 
 .pagination {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
 }
@@ -223,13 +224,54 @@
   list-style: none;
 }
 
+.page-item:first-of-type {
+  color: rgb(35, 140, 246);
+  list-style: none;
+}
+
+.page-item:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
 .page-link {
   text-decoration-line: none;
   color: rgb(35, 140, 246);
   padding: 6px 10px;
+  margin-left: -1px;
   border: 1px solid lightgray;
 }
 
 .page-link:hover {
   background-color: rgb(227, 227, 227);
+}
+
+.pagination > .page-item:first-of-type > .page-link {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.pagination > .page-item:last-of-type > .page-link {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.pagination > .page-item.disabled > .page-link {
+  color: gray;
+}
+.pagination > .page-item.disabled > .page-link:hover {
+  background-color: initial; /*TODO: Make it unclickable*/
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.pagination.pagination-lg > .page-item > .page-link {
+  font-size: larger;
+  padding: 10px 20px; /*TODO: Change px to rem here and previous values*/
 }
