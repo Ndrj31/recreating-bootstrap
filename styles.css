@@ -194,13 +194,14 @@
 }
 
 .container {
-  padding: 50px 10ch 50px 10ch;
+  padding: 3rem 10ch 3rem 10ch;
   max-width: 400px;
-  /*TODO: Check this max width property*/
+
+  /*TODO: Check this max width property
+  TODO:also put the border radius on the right class for creating the jumbotron*/
 }
 
 .container-fluid {
-  padding: 50px 10ch 50px 10ch;
   width: 100%;
 }
 
@@ -224,21 +225,11 @@
   list-style: none;
 }
 
-.page-item:first-of-type {
-  color: rgb(35, 140, 246);
-  list-style: none;
-}
-
-.page-item:last-of-type {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
 .page-link {
   text-decoration-line: none;
   color: rgb(35, 140, 246);
-  padding: 6px 10px;
-  margin-left: -1px;
+  padding: 0.5rem 0.7rem;
+  margin-left: -1.2px;
   border: 1px solid lightgray;
 }
 
@@ -247,13 +238,13 @@
 }
 
 .pagination > .page-item:first-of-type > .page-link {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 
 .pagination > .page-item:last-of-type > .page-link {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .pagination > .page-item.disabled > .page-link {
@@ -273,5 +264,5 @@
 
 .pagination.pagination-lg > .page-item > .page-link {
   font-size: larger;
-  padding: 10px 20px; /*TODO: Change px to rem here and previous values*/
+  padding: 1rem 1.5rem; /*TODO: Change px to rem here and previous values*/
 }
