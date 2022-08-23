@@ -9,6 +9,38 @@
   background-color: rgb(248, 250, 252);
   border-color: none;
 }
+div .btn-group > .btn:not(:first-of-type) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+div .btn-group > .btn:not(:last-of-type) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.btn-group {
+  font-size: 0px; /* TODO: keep the content to the left side */
+}
+
+/*.btn-group-lg {
+   TODO: larger font size without getting spaces between buttons
+} */
+
+div .btn-group-vertical {
+  font-size: 0px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+div .btn-group-vertical > .btn:not(:first-of-type) {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+div .btn-group-vertical > .btn:not(:last-of-type) {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
 
 .btn-primary {
   background-color: rgb(48, 114, 200);
