@@ -358,6 +358,7 @@ div .btn-group-vertical > .btn:not(:last-of-type) {
 }
 .nav-link:not(.disabled):hover {
   color: var(--link-hover-color);
+}
 .flex-column {
   display: flex;
   flex-direction: column;
