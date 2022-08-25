@@ -47,11 +47,11 @@
   border-color: none;
 }
 
-div .btn-group > .btn:not(:first-of-type) {
+.btn-group > .btn:not(:first-of-type) {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-div .btn-group > .btn:not(:last-of-type) {
+.btn-group > .btn:not(:last-of-type) {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -63,23 +63,23 @@ div .btn-group > .btn:not(:last-of-type) {
    TODO: larger font size without getting spaces between buttons
 } */
 
-div .btn-group-vertical {
+.btn-group-vertical {
   font-size: 0px;
   width: fit-content;
   display: flex;
   flex-direction: column;
 }
-div .btn-group-vertical > .btn:not(:first-of-type) {
+.btn-group-vertical > .btn:not(:first-of-type) {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-div .btn-group-vertical > .btn:not(:last-of-type) {
+.btn-group-vertical > .btn:not(:last-of-type) {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary-bg-color);
   color: white;
 }
 .btn-primary:hover {
@@ -149,7 +149,6 @@ div .btn-group-vertical > .btn:not(:last-of-type) {
   max-width: auto;
   border-radius: 50%;
 }
-/*TODO: Check if it is the same as what bootstrap offers, also check better suited units*/
 .rounded {
   margin: 10px;
   max-height: 300px;
@@ -379,3 +378,20 @@ div .btn-group-vertical > .btn:not(:last-of-type) {
   border-top-right-radius: 3px;
   color: gray;
 }
+
+.nav.nav-pills > .nav-item > .nav-link.active {
+  background-color: var(--primary-bg-color);
+  color: white;
+  border-radius: 3px;
+}
+.nav.nav-justified {
+  justify-content: space-around;
+}
+
+.nav.nav.nav-justified > .nav-item {
+  width: 100%;
+}
+
+.nav.nav-pills.nav-justified > .nav-item > .nav-link.active {
+  background-color: var(--primary-bg-color);
+} /* TODO:  padding/background modifications  */
