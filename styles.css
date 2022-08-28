@@ -246,7 +246,6 @@
 }
 .container-fluid {
   padding: 15px;
-  width: 100%;
 }
 .jumbotron {
   background-color: lightgray;
@@ -401,4 +400,22 @@
 
 .nav.nav-justified > .nav-item > .nav-link {
   display: block;
+}
+
+.row {
+  /* Has to be used together with container so it does not overflow */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0 -15px;
+  max-width: inherit;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem 1rem;
+  background-color: var(--primary-bg-color);
+  width: 100%;
+  min-width: calc(100% / 12 - 2rem);
 }
