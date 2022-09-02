@@ -37,6 +37,17 @@
   --link-hover-color: rgb(18, 54, 173);
 }
 
+* {
+  box-sizing: border-box;
+  /*  outline: 2px solid red !important; */
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .btn {
   padding: 5px 5px 7px 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -434,66 +445,79 @@
   /* Has to be used together with container so it does not overflow */
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
 
 .row > .col {
   padding: 0.2rem 1rem;
-  width: 100%;
-  min-width: calc(100% / 12 - 2rem);
+  min-width: calc(100% / 12);
+  flex: 1 1;
 }
 .row > .col-1 {
   padding: 0.2rem 1rem;
-  width: calc(100% / 12 - 2rem);
+  min-width: calc(100% / 12);
 }
 .row > .col-2 {
   padding: 0.2rem 1rem;
-  width: calc(100% / 6 - 2rem);
+  min-width: calc(100% / 6);
 }
 .row > .col-3 {
   padding: 0.2rem 1rem;
-  width: calc(100% / 4 - 2rem);
+  min-width: calc(100% / 4);
 }
 .row > .col-4 {
   padding: 0.2rem 1rem;
-  width: calc(100% / 3 - 2rem);
+  min-width: calc(100% / 3);
 }
 .row > .col-5 {
   padding: 0.2rem 1rem;
-  width: calc(100% * 5 / 12 - 2rem);
+  min-width: calc(100% * 5 / 12);
 }
 
 .row > .col-6 {
   padding: 0.2rem 1rem;
-  width: calc(100% / 2 - 2rem);
+  min-width: calc(100% / 2);
 }
 
 .row > .col-7 {
   padding: 0.2rem 1rem;
-  width: calc(100% * 7 / 12 - 2rem);
+  min-width: calc(100% * 7 / 12);
 }
 .row > .col-8 {
   padding: 0.2rem 1rem;
-  width: calc(100% * 2 / 3 - 2rem);
+  min-width: calc(100% * 2 / 3);
 }
 .row > .col-9 {
   padding: 0.2rem 1rem;
-  width: calc(100% * 3 / 4 - 2rem);
+  min-width: calc(100% * 3 / 4);
 }
 .row > .col-10 {
   padding: 0.2rem 1rem;
-  width: calc(100% * 5 / 6 - 2rem);
+  min-width: calc(100% * 5 / 6);
 }
 .row > .col-11 {
   padding: 0.2rem 1rem;
-  width: calc(100% * 11 / 12 - 2rem);
+  min-width: calc(100% * 11 / 12);
 }
 
 .row > .col-12 {
   padding: 0.2rem 1rem;
-  width: calc(100% - 2rem);
+  min-width: 100%;
 }
+
+.row.row-cols-1 > * {
+  flex: 0 0 100%;
+}
+
+.row.row-cols-2 > * {
+  flex: 0 0 50%;
+}
+
+.row.row-cols-3 > * {
+  flex: 0 0 33.33%;
+}
+
 .dropdown {
   padding: 1rem;
   position: relative;
