@@ -459,60 +459,65 @@ body {
   margin: 0 -15px;
 }
 
-.row > .col {
+.row > .col,
+.row > .col-sm,
+.row > .col-md,
+.row > .col-lg,
+.row > .col-xl {
   padding: 0.2rem 1rem;
-  min-width: calc(100% / 12);
   flex: 1 1;
+  min-width: calc(100% / 12);
+}
+
+.row > .col-1,
+.row > .col-2,
+.row > .col-3,
+.row > .col-4,
+.row > .col-5,
+.row > .col-6,
+.row > .col-7,
+.row > .col-8,
+.row > .col-9,
+.row > .col-10,
+.row > .col-11,
+.row > .col-12 {
+  padding: 0.2rem 1rem;
+  flex: 0 0;
 }
 .row > .col-1 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% / 12);
 }
 .row > .col-2 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% / 6);
 }
 .row > .col-3 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% / 4);
 }
 .row > .col-4 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% / 3);
 }
 .row > .col-5 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% * 5 / 12);
 }
-
 .row > .col-6 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% / 2);
 }
-
 .row > .col-7 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% * 7 / 12);
 }
 .row > .col-8 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% * 2 / 3);
 }
 .row > .col-9 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% * 3 / 4);
 }
 .row > .col-10 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% * 5 / 6);
 }
 .row > .col-11 {
-  padding: 0.2rem 1rem;
   min-width: calc(100% * 11 / 12);
 }
-
 .row > .col-12 {
-  padding: 0.2rem 1rem;
   min-width: 100%;
 }
 
@@ -527,6 +532,28 @@ body {
 .row.row-cols-3 > * {
   flex: 0 0 33.33%;
 }
+
+@media screen and (max-width: 768px) {
+  .row > .col-sm {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row > .col-md {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row > .col-lg {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row > .col-xl {
+    min-width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .row > .col-sm-1 {
     padding: 0.2rem 1rem;
@@ -707,7 +734,6 @@ body {
     padding: 0.2rem 1rem;
     min-width: calc(100% * 5 / 12);
   }
-
   .row > .col-xl-6 {
     padding: 0.2rem 1rem;
     min-width: calc(100% / 2);
