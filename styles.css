@@ -36,7 +36,7 @@
   --link-bg-color: rgb(54, 87, 197);
   --link-hover-color: rgb(18, 54, 173);
 
-  --input-color-blue: rgba(138, 209, 232, 0.6);
+  --input-color-blue: rgba(94, 162, 239, 0.6);
 }
 
 * {
@@ -49,10 +49,12 @@ body {
   padding: 0;
   margin: 0;
 }
-
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .btn {
   padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   font-size: small;
   border-radius: 3px;
   border-style: none;
@@ -210,7 +212,6 @@ body {
   padding: 2px 8px 5px 8px;
   color: black;
   font-size: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px;
   border-radius: 15px;
   font-weight: 700;
@@ -308,7 +309,6 @@ body {
 }
 
 .pagination {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: row;
@@ -355,7 +355,6 @@ body {
 }
 
 .breadcrumb {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   color: rgb(35, 140, 246);
   background-color: rgb(231, 231, 231);
@@ -388,7 +387,6 @@ body {
   display: flex;
   list-style-type: none;
   padding: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   border: 1px;
 }
@@ -842,7 +840,6 @@ body {
 }
 
 .dropdown .dropdown-menu {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   display: none;
   flex-direction: column;
@@ -886,7 +883,6 @@ body {
 
 .form-group {
   padding: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--dark-color);
   margin: 10px 0px;
 }
@@ -903,4 +899,17 @@ body {
   border-color: var(--input-color-blue);
   box-shadow: 0px 0px 0px 2px var(--input-color-blue);
   outline: 0;
+}
+/* TODO: Check later if more is needed on the 2 classes below*/
+.form-check > .form-check-label {
+  padding: 5px;
+  margin: 2px 0px;
+}
+.form-check > .form-check-label > .form-check-input {
+  margin: 5px 7px;
+}
+/* TODO: use diplay flex in the following class to have more control over it */
+.form-check-inline {
+  display: inline;
+  margin-right: 8px;
 }

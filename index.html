@@ -450,6 +450,91 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+      <h3>Form control: textarea</h3>
+      <div class="container">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea
+              class="form-control"
+              rows="5"
+              id="comment"
+              name="text"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <h3>Form control: checkbox</h3>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="form-check">
+          <label class="form-check-label" for="check1">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="check1"
+              name="option1"
+              value="something"
+              checked
+            />Option 1
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="check2">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="check2"
+              name="option2"
+              value="something"
+            />Option 2
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" disabled />Option 3
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Form control: inline checkbox</h2>
+      <p>The form below contains three inline checkboxes:</p>
+      <form action="/action_page.php">
+        <div class="form-check-inline">
+          <label class="form-check-label" for="check1">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="check1"
+              name="vehicle1"
+              value="something"
+              checked
+            />Option 1
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label" for="check2">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="check2"
+              name="vehicle2"
+              value="something"
+            />Option 2
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" disabled />Option 3
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
   </body>
 </html>
