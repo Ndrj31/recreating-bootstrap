@@ -35,6 +35,8 @@
   --link-color: rgb(54, 87, 197);
   --link-bg-color: rgb(54, 87, 197);
   --link-hover-color: rgb(18, 54, 173);
+
+  --input-color-blue: rgba(138, 209, 232, 0.6);
 }
 
 * {
@@ -49,7 +51,7 @@ body {
 }
 
 .btn {
-  padding: 5px 5px 7px 5px;
+  padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
   border-radius: 3px;
@@ -880,4 +882,25 @@ body {
 
 .dropdown .dropdown-toggle:focus {
   border-color: lightblue;
+}
+
+.form-group {
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--dark-color);
+  margin: 10px 0px;
+}
+
+.form-group > .form-control {
+  width: 100%;
+  padding: 9px 10px;
+  margin: 8px 0px;
+  border: 2px solid lightgray;
+  border-radius: 3px;
+}
+
+.form-group > .form-control:focus {
+  border-color: var(--input-color-blue);
+  box-shadow: 0px 0px 0px 2px var(--input-color-blue);
+  outline: 0;
 }
