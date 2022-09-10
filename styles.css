@@ -893,7 +893,6 @@ body {
   margin: 8px 0px;
   border: 1px solid lightgray;
   border-radius: 3px;
-  font-size: medium;
 }
 
 .form-group > .form-control:focus {
@@ -916,8 +915,21 @@ body {
 }
 
 .form-group > .form-control.form-control-sm {
-  font-size: smaller;
+  font-size: small;
 }
 .form-group > .form-control.form-control-lg {
-  font-size: larger;
+  font-size: large;
+}
+.form-group > .form-control-plaintext {
+  border: 0px solid transparent;
+  width: 100%;
+  padding: 10px 0px;
+}
+.form-group > .form-control-range {
+  width: 100%;
+}
+.form-group > .form-control-file.border {
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  width: 100%;
 }
