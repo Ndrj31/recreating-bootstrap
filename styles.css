@@ -889,10 +889,11 @@ body {
 
 .form-group > .form-control {
   width: 100%;
-  padding: 9px 10px;
+  padding: 7px 10px;
   margin: 8px 0px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 3px;
+  font-size: medium;
 }
 
 .form-group > .form-control:focus {
@@ -912,4 +913,11 @@ body {
 .form-check-inline {
   display: inline;
   margin-right: 8px;
+}
+
+.form-group > .form-control.form-control-sm {
+  font-size: smaller;
+}
+.form-group > .form-control.form-control-lg {
+  font-size: larger;
 }
