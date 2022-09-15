@@ -37,6 +37,10 @@
   --link-hover-color: rgb(18, 54, 173);
 
   --input-color-blue: rgba(94, 162, 239, 0.6);
+
+  --code-color: rgb(249, 74, 118);
+
+  --kbd-color: rgb(33, 37, 41);
 }
 
 * {
@@ -1024,3 +1028,38 @@ p {
 .invalid-feedback {
   color: var(--danger-color);
 } /* TODO: Use JS */
+.blockquote-footer {
+  color: gray;
+  font-size: smaller;
+}
+.blockquote-footer:before {
+  content: "— ";
+}
+.blockquote {
+  font-size: larger;
+}
+dt {
+  font-weight: 700;
+}
+abbr {
+  cursor: help;
+}
+code {
+  color: var(--code-color);
+  font-family: Courier, monospace;
+  font-weight: 100;
+  font-size: medium;
+}
+kbd {
+  background-color: var(--kbd-color);
+  color: white;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+pre {
+  font-weight: smaller;
+  font-weight: 500;
+  font-family: Courier, monospace;
+  font-size: smaller;
+  margin: 0 -50px;
+} /* TODO: check : text height or font-family. also check margin  */
