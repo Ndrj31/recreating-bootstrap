@@ -48,10 +48,54 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-size: 16px; /* Bootstrap4 default setting*/
+  line-height: 1.5; /* Bootstrap4 default setting*/
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+/* h1 on Bootstrap4 default setting*/
+h1 {
+  font-weight: 2.5rem;
+}
+h2 {
+  font-weight: 2rem;
+}
+h3 {
+  font-weight: 1.75rem;
+}
+h4 {
+  font-weight: 1.5rem;
+}
+h5 {
+  font-weight: 1.25rem;
+}
+h6 {
+  font-weight: 1rem;
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+.display-2 {
+  font-size: 5rem;
+  font-weight: 100;
+}
+.display-3 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+.display-4 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+} /* Bootstrap4 default setting*/
+
 .btn {
   padding: 10px;
 
@@ -974,3 +1018,9 @@ body {
   flex: 1 1;
   margin: 5px;
 }
+.valid-feedback {
+  color: var(--success-color);
+} /* TODO: Use JS */
+.invalid-feedback {
+  color: var(--danger-color);
+} /* TODO: Use JS */
