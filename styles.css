@@ -12,24 +12,24 @@
   --success-bg-color: rgb(58, 147, 58);
   --success-hover-color: rgb(29, 107, 29);
 
-  --info-color: rgb(20, 175, 192);
-  --info-bg-color: rgb(20, 175, 192);
+  --info-color: rgb(25, 162, 186);
+  --info-bg-color: rgb(25, 162, 186);
   --info-hover-color: rgb(65, 111, 117);
 
-  --warning-color: rgb(252, 210, 103);
-  --warning-bg-color: rgb(252, 210, 103);
+  --warning-color: rgb(255, 194, 76);
+  --warning-bg-color: rgb(255, 194, 76);
   --warning-hover-color: rgb(247, 189, 43);
 
-  --danger-color: rgba(248, 68, 68, 0.849);
-  --danger-bg-color: rgba(248, 68, 68, 0.849);
+  --danger-color: rgb(220, 53, 69);
+  --danger-bg-color: rgb(220, 53, 69);
   --danger-hover-color: rgba(197, 6, 6, 0.849);
 
-  --dark-color: rgba(49, 53, 53, 0.899);
-  --dark-bg-color: rgba(49, 53, 53, 0.899);
+  --dark-color: rgb(248, 249, 250);
+  --dark-bg-color: rgb(248, 249, 250);
   --dark-hover-color: black;
 
-  --light-color: rgb(242, 239, 239);
-  --light-bg-color: rgb(242, 239, 239);
+  --light-color: rgb(248, 249, 250);
+  --light-bg-color: rgb(248, 249, 250);
   --light-hover-color: rgb(184, 182, 182);
 
   --link-color: rgb(54, 87, 197);
@@ -38,9 +38,12 @@
 
   --input-color-blue: rgba(94, 162, 239, 0.6);
 
-  --code-color: rgb(249, 74, 118);
+  --code-color: rgb(231, 61, 171);
 
   --kbd-color: rgb(33, 37, 41);
+
+  --text-muted-color: rgb(108, 117, 125);
+  --text-is-important-color: rgb(2, 123, 255);
 }
 
 * {
@@ -1063,3 +1066,36 @@ pre {
   font-size: smaller;
   margin: 0 -50px;
 } /* TODO: check : text height or font-family. also check margin  */
+.text-muted {
+  color: var(--text-muted-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-success {
+  color: var(--success-color);
+}
+.text-info {
+  color: var(--info-color);
+}
+.text-warning {
+  color: var(--warning-color);
+}
+.text-danger {
+  color: var(--danger-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-dark {
+  color: var(--dark-color);
+}
+.text-body {
+  color: black;
+}
+.text-light {
+  color: var(--light-color);
+}
+.text-white {
+  color: white;
+}
