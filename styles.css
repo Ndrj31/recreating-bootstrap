@@ -2,31 +2,31 @@
 :root {
   --primary-color: rgb(48, 114, 200);
   --primary-bg-color: rgb(48, 114, 200);
-  --primary-hover-color: rgb(6, 91, 202);
+  --primary-hover-color: rgb(1, 86, 179);
 
-  --secondary-color: rgb(93, 93, 93);
-  --secondary-bg-color: rgb(93, 93, 93);
-  --secondary-hover-color: rgb(53, 52, 52);
+  --secondary-color: rgb(108, 117, 125);
+  --secondary-bg-color: rgb(108, 117, 125);
+  --secondary-hover-color: rgb(73, 79, 84);
 
-  --success-color: rgb(58, 147, 58);
-  --success-bg-color: rgb(58, 147, 58);
-  --success-hover-color: rgb(29, 107, 29);
+  --success-color: rgb(40, 167, 68);
+  --success-bg-color: rgb(40, 167, 68);
+  --success-hover-color: rgb(24, 105, 44);
 
   --info-color: rgb(25, 162, 186);
   --info-bg-color: rgb(25, 162, 186);
-  --info-hover-color: rgb(65, 111, 117);
+  --info-hover-color: rgb(14, 102, 116);
 
   --warning-color: rgb(255, 194, 76);
   --warning-bg-color: rgb(255, 194, 76);
-  --warning-hover-color: rgb(247, 189, 43);
+  --warning-hover-color: rgb(186, 139, 0);
 
   --danger-color: rgb(220, 53, 69);
   --danger-bg-color: rgb(220, 53, 69);
-  --danger-hover-color: rgba(197, 6, 6, 0.849);
+  --danger-hover-color: rgb(167, 29, 42);
 
   --dark-color: rgb(248, 249, 250);
   --dark-bg-color: rgb(248, 249, 250);
-  --dark-hover-color: black;
+  --dark-hover-color: rgb(18, 20, 22);
 
   --light-color: rgb(248, 249, 250);
   --light-bg-color: rgb(248, 249, 250);
@@ -43,7 +43,13 @@
   --kbd-color: rgb(33, 37, 41);
 
   --text-muted-color: rgb(108, 117, 125);
+  --text-muted-hover-color: rgb(108, 117, 125);
   --text-is-important-color: rgb(2, 123, 255);
+  --text-body-color: black;
+  --text-darkgray-hover-color: rgb(18, 20, 22);
+  --text-darkgray-color: rgb(52, 58, 64);
+  --lightgray-hover-color: rgb(204, 211, 218);
+  --body-hover-color: black;
 }
 
 * {
@@ -1068,34 +1074,91 @@ pre {
 } /* TODO: check : text height or font-family. also check margin  */
 .text-muted {
   color: var(--text-muted-color);
+  text-decoration: none;
 }
+
+a.text-muted:hover {
+  text-decoration: underline;
+  color: var(--text-muted-hover-color);
+}
+
 .text-primary {
+  text-decoration: none;
   color: var(--primary-color);
 }
+a.text-primary:hover {
+  text-decoration: underline;
+  color: var(--primary-hover-color);
+}
 .text-success {
+  text-decoration: none;
   color: var(--success-color);
 }
+a.text-success:hover {
+  text-decoration: underline;
+  color: var(--success-hover-color);
+}
 .text-info {
+  text-decoration: none;
   color: var(--info-color);
 }
+a.text-info:hover {
+  text-decoration: underline;
+  color: var(--info-hover-color);
+}
 .text-warning {
+  text-decoration: none;
   color: var(--warning-color);
 }
+a.text-warning:hover {
+  text-decoration: underline;
+  color: var(--warning--hover-color);
+}
 .text-danger {
+  text-decoration: none;
   color: var(--danger-color);
 }
+a.text-danger:hover {
+  text-decoration: underline;
+  color: var(--danger-hover-color);
+}
 .text-secondary {
+  text-decoration: none;
   color: var(--secondary-color);
 }
+a.text-secondary:hover {
+  text-decoration: underline;
+  color: var(--secondary-hover-color);
+}
 .text-dark {
-  color: var(--dark-color);
+  text-decoration: none;
+  color: var(--text-darkgray-color);
+}
+a.text-dark:hover {
+  text-decoration: underline;
+  color: var(--text-darkgray-hover-color);
 }
 .text-body {
-  color: black;
+  text-decoration: none;
+  color: var(--text-body-color);
+}
+a.text-body:hover {
+  text-decoration: underline;
+  color: var(--text-body-hover-color);
 }
 .text-light {
+  text-decoration: none;
   color: var(--light-color);
 }
+a.text-light:hover {
+  text-decoration: underline;
+  color: var(--light-hover-color);
+}
 .text-white {
+  text-decoration: none;
   color: white;
+}
+a.text-white:hover {
+  text-decoration: underline;
+  color: var(--lightgray-hover-color);
 }
