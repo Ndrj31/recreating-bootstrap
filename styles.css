@@ -24,8 +24,8 @@
   --danger-bg-color: rgb(220, 53, 69);
   --danger-hover-color: rgb(167, 29, 42);
 
-  --dark-color: rgb(248, 249, 250);
-  --dark-bg-color: rgb(248, 249, 250);
+  --dark-color: rgb(52, 58, 64);
+  --dark-bg-color: rgb(52, 58, 64);
   --dark-hover-color: rgb(18, 20, 22);
 
   --light-color: rgb(248, 249, 250);
@@ -50,6 +50,7 @@
   --text-darkgray-color: rgb(52, 58, 64);
   --lightgray-hover-color: rgb(204, 211, 218);
   --body-hover-color: black;
+  --text-white-color: rgb(255, 255, 255);
 }
 
 * {
@@ -1161,4 +1162,10 @@ a.text-light:hover {
 a.text-white:hover {
   text-decoration: underline;
   color: var(--lightgray-hover-color);
+}
+.text-black-50 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5);
 }
