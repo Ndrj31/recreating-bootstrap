@@ -1,7 +1,7 @@
 /*for recreating classes of bootstrap*/
 :root {
-  --primary-color: rgb(48, 114, 200);
-  --primary-bg-color: rgb(48, 114, 200);
+  --primary-color: rgb(53, 129, 255);
+  --primary-bg-color: rgb(53, 129, 255);
   --primary-hover-color: rgb(1, 86, 179);
 
   --secondary-color: rgb(108, 117, 125);
@@ -117,6 +117,9 @@ p {
   border-style: none;
   background-color: rgb(248, 250, 252);
   border-color: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .bg-primary {
@@ -1167,4 +1170,44 @@ a.text-white:hover {
 }
 .text-white-50 {
   color: rgba(255, 255, 255, 0.5);
+}
+.card {
+  border: solid lightgray 1px;
+  border-radius: 3px;
+}
+.card-body {
+  padding: 1.25rem;
+}
+.card-header {
+  background-color: var(--light-bg-color);
+  padding: 0.8rem 1.25rem;
+  border-bottom: solid lightgray 1px;
+}
+.card-footer {
+  padding: 0.8rem 1.25rem;
+  border-top: solid lightgray 1px;
+  background-color: var(--light-bg-color);
+}
+.card-title {
+  font-size: x-large;
+  font-weight: 500;
+  margin: 0;
+}
+.card-text {
+  margin: 1rem 0.8rem 1rem 0;
+}
+.card-link {
+  margin: 1rem 0.8rem 1rem 0;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.card-link:hover {
+  color: var(--primary-hover-color);
+}
+.card-img-top {
+  overflow: hidden;
+}
+.card-img-bottom {
+  overflow: hidden;
+  /* TODO: make the bottom of the img  meet the card one */
 }
