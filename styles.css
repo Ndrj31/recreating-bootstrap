@@ -1,4 +1,4 @@
-/*for recreating btn class of bootstrap*/
+/*for recreating classes of bootstrap*/
 :root {
   --primary-color: rgb(48, 114, 200);
   --primary-bg-color: rgb(48, 114, 200);
@@ -62,7 +62,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 16px; /* Bootstrap4 default setting*/
+  font-size: 16px; /* Bootstrap4 default setting */
   line-height: 1.5; /* Bootstrap4 default setting*/
 }
 body {
@@ -112,7 +112,6 @@ p {
 
 .btn {
   padding: 10px;
-
   font-size: small;
   border-radius: 3px;
   border-style: none;
@@ -318,14 +317,13 @@ p {
   border-radius: 3px;
   overflow: hidden;
 }
-.progress-bar {
+.progress > .progress-bar {
   background-color: rgb(35, 140, 246);
-  height: 15px;
   text-align: center;
   color: white;
-  vertical-align: middle;
+  font-size: 12px;
 }
-.progress-bar.bg-success {
+.progress > .progress-bar.bg-success {
   background-color: green;
 }
 
@@ -473,6 +471,7 @@ p {
 .nav.nav-tabs:not(.nav-justified) {
   padding: 0px;
   border-bottom: 1px solid lightgray;
+  line-height: normal;
 }
 
 .nav.nav-tabs > .nav-item > .nav-link {
