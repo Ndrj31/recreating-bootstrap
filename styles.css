@@ -1174,6 +1174,9 @@ a.text-white:hover {
 .card {
   border: solid lightgray 1px;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .card-body {
   padding: 1.25rem;
@@ -1205,9 +1208,22 @@ a.text-white:hover {
   color: var(--primary-hover-color);
 }
 .card-img-top {
-  overflow: hidden;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 .card-img-bottom {
-  overflow: hidden;
-  /* TODO: make the bottom of the img  meet the card one */
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* Could not figure it out myself, so had too look it up in Bootstrap */
+.stretched-link::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
