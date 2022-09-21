@@ -55,7 +55,7 @@
 
 * {
   box-sizing: border-box;
-  /*  outline: 2px solid red !important; */
+  /*   outline: 2px solid red !important; */
 }
 
 html,
@@ -1216,14 +1216,32 @@ a.text-white:hover {
   border-bottom-right-radius: 2px;
 }
 
-/* Could not figure it out myself, so had too look it up in Bootstrap */
 .stretched-link::before {
+  /* Could not figure it out myself, so had too look it up in Bootstrap */
   content: "";
   position: absolute;
-  background-color: transparent;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   z-index: 1;
+}
+.card.img-fluid {
+  max-width: calc(100% - 1rem);
+}
+.card-img-overlay > .card-text {
+  margin: 10px 15px 20px 0;
+}
+.card-img-overlay > .card-title {
+  margin-top: 15px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 0 1rem 1rem;
 }
