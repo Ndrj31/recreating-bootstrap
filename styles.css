@@ -1245,3 +1245,24 @@ a.text-white:hover {
   margin: auto;
   padding: 0 0 1rem 1rem;
 }
+
+.card-columns {
+  column-gap: 20px;
+  column-count: 3;
+}
+
+.card-columns > .card {
+  margin-bottom: 12px;
+}
+.card-columns .card-body {
+  padding: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+.text-center {
+  text-align: center;
+}
