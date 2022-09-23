@@ -1281,3 +1281,31 @@ a.text-white:hover {
     margin-bottom: 12px;
   }
 }
+.card-group {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.card-group .card {
+  border: 0px;
+  border-radius: 0px;
+}
+.card-group .card:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.card-group .card:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+@media screen and (max-width: 576px) {
+  .card-group {
+    display: inline-block;
+    width: 100%;
+  }
+  .card-group .card {
+    border-radius: 3px;
+    margin: 10px 0px;
+  }
+}
