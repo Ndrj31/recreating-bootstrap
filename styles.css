@@ -1266,3 +1266,18 @@ a.text-white:hover {
 .text-center {
   text-align: center;
 }
+.card-deck {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  column-gap: 25px;
+}
+@media screen and (max-width: 576px) {
+  .card-deck {
+    display: inline-block;
+    width: 100%;
+  }
+  .card-deck > .card {
+    margin-bottom: 12px;
+  }
+}
