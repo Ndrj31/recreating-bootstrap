@@ -51,6 +51,8 @@
   --lightgray-hover-color: rgb(204, 211, 218);
   --body-hover-color: black;
   --text-white-color: rgb(255, 255, 255);
+
+  --table-dark-line-color: rgb(69, 77, 85);
 }
 
 * {
@@ -1338,4 +1340,17 @@ a.text-white:hover {
 }
 .table.table-bordered th:first-child {
   border-left: 1px solid lightgray;
+}
+.table.table-hover tbody tr:hover {
+  background-color: var(--light-bg-color);
+}
+.table.table-dark {
+  background-color: var(--dark-bg-color);
+  color: white;
+}
+.table.table-dark td {
+  border-color: var(--table-dark-line-color);
+}
+.table.table-dark th {
+  border-color: var(--table-dark-line-color);
 }
