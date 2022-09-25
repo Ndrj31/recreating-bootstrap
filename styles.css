@@ -1309,3 +1309,33 @@ a.text-white:hover {
     margin: 10px 0px;
   }
 }
+.table {
+  border-spacing: 0;
+  width: 100%;
+}
+.table th {
+  padding: 10px;
+  border-bottom: 2px solid lightgray;
+  border-top: 1px solid lightgray;
+  text-align: left;
+}
+
+.table td {
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+.table.table-striped tbody > tr:nth-child(odd) {
+  background-color: var(--light-bg-color);
+}
+.table.table-bordered td {
+  border-right: 1px solid lightgray;
+}
+.table.table-bordered td:first-child {
+  border-left: 1px solid lightgray;
+}
+.table.table-bordered th {
+  border-right: 1px solid lightgray;
+}
+.table.table-bordered th:first-child {
+  border-left: 1px solid lightgray;
+}
