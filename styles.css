@@ -52,6 +52,7 @@
   --body-hover-color: black;
   --text-white-color: rgb(255, 255, 255);
 
+  --less-darkgray-bg-color: rgb(62, 68, 74);
   --table-dark-line-color: rgb(69, 77, 85);
 }
 
@@ -1341,9 +1342,11 @@ a.text-white:hover {
 .table.table-bordered th:first-child {
   border-left: 1px solid lightgray;
 }
+
 .table.table-hover tbody tr:hover {
   background-color: var(--light-bg-color);
 }
+
 .table.table-dark {
   background-color: var(--dark-bg-color);
   color: white;
@@ -1353,4 +1356,11 @@ a.text-white:hover {
 }
 .table.table-dark th {
   border-color: var(--table-dark-line-color);
+}
+
+.table.table-striped tbody tr:nth-child(odd) {
+  background-color: var(--less-darkgray-bg-color);
+}
+.table.table-dark.table-hover tbody tr:hover {
+  background-color: var(--less-darkgray-bg-color);
 }
