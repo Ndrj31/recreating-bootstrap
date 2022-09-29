@@ -54,6 +54,27 @@
 
   --less-darkgray-bg-color: rgb(62, 68, 74);
   --table-dark-line-color: rgb(69, 77, 85);
+  --table-lightgray-color: rgb(242, 242, 242);
+
+  --primary-table-color: rgb(184, 218, 255);
+  --success-table-color: rgb(195, 230, 203);
+  --danger-table-color: rgb(245, 198, 203);
+  --info-table-color: rgb(191, 229, 235);
+  --warning-table-color: rgb(255, 238, 186);
+  --active-table-color: rgb(218, 218, 218);
+  --secondary-table-color: rgb(213, 216, 219);
+  --light-table-color: rgb(253, 253, 254);
+  --dark-table-color: rgb(198, 200, 202);
+
+  --primary-line-color: rgb(122, 186, 255);
+  --success-line-color: rgb(143, 209, 158);
+  --danger-line-color: rgb(237, 150, 158);
+  --info-line-color: rgb(134, 207, 218);
+  --warning-line-color: rgb(255, 223, 126);
+  --active-line-color: rgb(222, 226, 230);
+  --secondary-line-color: rgb(179, 183, 187);
+  --light-line-color: rgb(253, 253, 254);
+  --dark-line-color: rgb(69, 77, 85);
 }
 
 * {
@@ -1324,7 +1345,7 @@ a.text-white:hover {
 }
 
 .table td {
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
   padding: 10px;
 }
 .table.table-striped tbody > tr:nth-child(odd) {
@@ -1332,6 +1353,10 @@ a.text-white:hover {
 }
 .table.table-bordered td {
   border-right: 1px solid lightgray;
+}
+.table.table-bordered td {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid transparent;
 }
 .table.table-bordered td:first-child {
   border-left: 1px solid lightgray;
@@ -1359,8 +1384,52 @@ a.text-white:hover {
 }
 
 .table.table-striped tbody tr:nth-child(odd) {
+  background-color: var(--table-lightgray-color);
+}
+.table.table-dark.table-striped tbody tr:nth-child(odd) {
   background-color: var(--less-darkgray-bg-color);
 }
 .table.table-dark.table-hover tbody tr:hover {
   background-color: var(--less-darkgray-bg-color);
+}
+.table.table-borderless td,
+.table.table-borderless th {
+  border: 0;
+}
+
+.table .table-primary td {
+  background-color: var(--primary-table-color);
+  border-top: 1px solid var(--primary-line-color);
+}
+.table .table-success td {
+  background-color: var(--success-table-color);
+  border-top: 1px solid var(--success-line-color);
+}
+.table .table-danger td {
+  background-color: var(--danger-table-color);
+  border-top: 1px solid var(--danger-line-color);
+}
+.table .table-info td {
+  background-color: var(--info-table-color);
+  border-top: 1px solid var(--info-line-color);
+}
+.table .table-warning td {
+  background-color: var(--warning-table-color);
+  border-top: 1px solid var(--warning-line-color);
+}
+.table .table-active td {
+  background-color: var(--active-table-color);
+  border-top: 1px solid var(--active-line-color);
+}
+.table .table-secondary td {
+  background-color: var(--secondary-table-color);
+  border-top: 1px solid var(--secondary-line-color);
+}
+.table .table-light td {
+  background-color: var(--light-table-color);
+  border-top: 1px solid var(--light-line-color);
+}
+.table .table-dark td {
+  background-color: var(--dark-table-color);
+  border-top: 1px solid var(--dark-line-color);
 }
