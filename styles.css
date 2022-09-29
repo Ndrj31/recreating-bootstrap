@@ -42,6 +42,8 @@
 
   --kbd-color: rgb(33, 37, 41);
 
+  --lightgray-color: rgb(211, 211, 211);
+
   --text-muted-color: rgb(108, 117, 125);
   --text-muted-hover-color: rgb(108, 117, 125);
   --text-is-important-color: rgb(2, 123, 255);
@@ -55,6 +57,7 @@
   --less-darkgray-bg-color: rgb(62, 68, 74);
   --table-dark-line-color: rgb(69, 77, 85);
   --table-lightgray-color: rgb(242, 242, 242);
+  --table-header-lightgray-color: rgb(234, 236, 239);
 
   --primary-table-color: rgb(184, 218, 255);
   --success-table-color: rgb(195, 230, 203);
@@ -1339,33 +1342,35 @@ a.text-white:hover {
 }
 .table th {
   padding: 10px;
-  border-bottom: 2px solid lightgray;
-  border-top: 1px solid lightgray;
+  border-bottom: 1px solid var(--lightgray-color);
+  border-top: 1px solid var(--lightgray-color);
   text-align: left;
 }
 
 .table td {
-  border-top: 1px solid lightgray;
+  border-top: 1px solid var(--lightgray-color);
   padding: 10px;
 }
 .table.table-striped tbody > tr:nth-child(odd) {
   background-color: var(--light-bg-color);
 }
 .table.table-bordered td {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid var(--lightgray-color);
 }
 .table.table-bordered td {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid var(--lightgray-color);
   border-top: 1px solid transparent;
 }
 .table.table-bordered td:first-child {
-  border-left: 1px solid lightgray;
+  border-left: 1px solid var(--lightgray-color);
 }
 .table.table-bordered th {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid var(--lightgray-color);
+  border-bottom: 2px solid var(--lightgray-color);
 }
+
 .table.table-bordered th:first-child {
-  border-left: 1px solid lightgray;
+  border-left: 1px solid var(--lightgray-color);
 }
 
 .table.table-hover tbody tr:hover {
@@ -1432,4 +1437,46 @@ a.text-white:hover {
 .table .table-dark td {
   background-color: var(--dark-table-color);
   border-top: 1px solid var(--dark-line-color);
+}
+.table .thead-dark th {
+  background-color: var(--dark-bg-color);
+  color: var(--text-white-color);
+  border-bottom: 1px solid var(--dark-bg-color);
+  border-top: 2px solid var(--dark-bg-color);
+}
+
+.table .thead-light th {
+  background-color: var(--table-header-lightgray-color);
+  border-bottom: 1px solid var(--lightgray-color);
+  border-top: 2px solid var(--lightgray-color);
+  color: var(--text-darkgray-color);
+}
+.table.table-bordered.table-sm td {
+  padding: 5px;
+}
+.table.table-bordered.table-sm th {
+  padding: 5px;
+}
+.table-responsive {
+  overflow-x: scroll;
+}
+@media screen and (max-width: 576px) {
+  .table-responsive-sm {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-responsive-md {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 992px) {
+  .table-responsive-lg {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .table-responsive-xl {
+    overflow-x: scroll;
+  }
 }
